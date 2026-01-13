@@ -105,18 +105,20 @@
                     <a href="#contato" class="bg-brand-neon text-bg-main px-8 py-3.5 rounded-sm hover:bg-brand-neon-hover transition-colors text-center uppercase text-xs font-bold tracking-widest">
                         Agendar Sessão
                     </a>
-                    <a href="#servicos" class="text-text-muted px-6 py-3.5 border-b border-transparent hover:border-brand-lilac hover:text-brand-lilac transition-all text-center uppercase text-xs font-bold tracking-widest flex items-center gap-2 group">
+                    <!-- Botão Centralizado no Mobile (justify-center) e Esquerda no Desktop (sm:justify-start) -->
+                    <a href="#servicos" class="text-text-muted px-6 py-3.5 border-b border-transparent hover:border-brand-lilac hover:text-brand-lilac transition-all text-center uppercase text-xs font-bold tracking-widest flex items-center gap-2 group justify-center sm:justify-start">
                         Entenda o Processo <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Imagem: Arte Abstrata -->
+            <!-- Imagem: Arte Abstrata "Psi" flutuante (Metade do tamanho no mobile) -->
             <div class="relative h-[480px] w-full flex items-center justify-center fade-in-up order-1 md:order-2 opacity-60" style="animation-delay: 0.2s;">
                  <div class="absolute w-[400px] h-[400px] bg-brand-lilac/5 blur-[80px] rounded-full"></div>
                  
-                 <!-- SVG Psi Animado -->
-                 <svg width="350" height="400" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-[350px] drop-shadow-[0_0_5px_rgba(190,242,100,0.1)]">
+                 <!-- SVG Psi Animado - Classes de largura ajustadas para mobile -->
+                 <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/2 max-w-[175px] md:w-full md:max-w-[350px] drop-shadow-[0_0_5px_rgba(190,242,100,0.1)]">
+                    <!-- Caminho Central (Psi) -->
                     <path d="M100 220 V20" 
                           stroke="currentColor" 
                           class="text-brand-neon stroke-2 md:stroke-[1.5]" 
@@ -128,6 +130,7 @@
                           stroke-linecap="round" 
                           fill="none" />
 
+                    <!-- Partículas Orbitando / Sinapses -->
                     <circle cx="100" cy="20" r="3" class="fill-brand-neon animate-pulse shadow-lg shadow-brand-neon" />
                     <circle cx="40" cy="70" r="2.5" class="fill-brand-lilac animate-[pulse_3s_ease-in-out_infinite]" />
                     <circle cx="160" cy="70" r="2.5" class="fill-brand-lilac animate-[pulse_3s_ease-in-out_infinite_1.5s]" />
@@ -157,15 +160,15 @@
             <div class="w-16 h-0.5 bg-gradient-to-r from-brand-neon to-brand-lilac mx-auto opacity-80"></div>
             
             <div class="prose prose-lg text-text-muted font-light mx-auto leading-loose text-justify md:text-center">
+                <!-- Textos ajustados -->
                 <p>
-                    Sou psicóloga, formada pela Universidade Federal de Goiás, com intercâmbio acadêmico pela Universidad de la República. Possuo pós-graduação em Neuropsicologia, Psicopedagogia e Educação Especial, além de MBA em Educação.
+                    Sou psicóloga, formada pela Universidade Federal de Goiás, com intercâmbio pela Universidad de la República. Possuo pós-graduação em Neuropsicologia, Psicopedagogia e Educação Especial, além de MBA em Educação.
                 </p>
                 <p>
-                    Minha atuação é fundamentada na Psicologia Histórico-Cultural, compreendendo a saúde mental como um processo construído nas relações sociais e nas condições históricas, culturais e políticas que atravessam a vida de cada sujeito.
+                    Minha atuação é fundamentada na Psicologia Histórico-Cultural, compreendendo a saúde mental como um processo construído nas relações sociais e nas condições históricas, culturais, políticas e econômicas que atravessam a vida de cada sujeito.
                 </p>
-                <!-- Texto atualizado para SEO (TEA/TDAH) -->
                 <p>
-                    Ao longo da minha trajetória, desenvolvi especial interesse e aprofundamento nas temáticas relacionadas ao Transtorno do Espectro Autista (TEA), ao Transtorno do Déficit de Atenção com Hiperatividade (TDAH) e às questões de gênero.
+                    Ao longo da minha trajetória, desenvolvi especial interesse nas temáticas relacionadas ao Transtorno do Espectro Autista (TEA), ao Transtorno do Déficit de Atenção com Hiperatividade (TDAH) e às questões de gênero.
                 </p>
             </div>
             
@@ -271,20 +274,20 @@
 
     <!-- Postagens (Atualizadas com Novos Conteúdos) -->
     <section id="artigos" class="py-24 bg-bg-card px-6 border-t border-white/5 relative">
-        <div class="max-w-5xl mx-auto relative z-10">
+        <div class="max-w-5xl mx-auto relative z-10 flex flex-col">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <h2 class="font-serif text-3xl text-text-main flex items-center gap-4">
                     <span class="w-1.5 h-1.5 bg-brand-lilac rounded-full box-shadow-lg shadow-brand-lilac"></span>
                     Últimas postagens
                 </h2>
-                <a href="#" class="text-xs uppercase tracking-widest font-bold text-brand-lilac hover:text-brand-neon transition-colors border-b border-brand-lilac/30 hover:border-brand-neon pb-1">
+                <!-- Link Desktop (Visível apenas em telas médias pra cima) -->
+                <a href="#" class="hidden md:block text-xs uppercase tracking-widest font-bold text-brand-lilac hover:text-brand-neon transition-colors border-b border-brand-lilac/30 hover:border-brand-neon pb-1">
                     Ler mais postagens &rarr;
                 </a>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-10">
+            <div class="grid md:grid-cols-2 gap-10 mb-8 md:mb-0">
                  <!-- Artigo 1: Inclusão -->
-                 <!-- Link para postagem original (placeholder para o backend/link real) -->
                  <a href="#" class="block group p-8 bg-bg-main/50 hover:bg-bg-main transition-colors rounded-sm border border-transparent hover:border-white/5 hover:shadow-lg relative overflow-hidden">
                     <div class="absolute left-0 top-0 w-1 h-full bg-brand-neon transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                     
@@ -294,7 +297,6 @@
                  </a>
 
                  <!-- Artigo 2: Neuropsicologia -->
-                 <!-- Link para postagem original (placeholder para o backend/link real) -->
                  <a href="#" class="block group p-8 bg-bg-main/50 hover:bg-bg-main transition-colors rounded-sm border border-transparent hover:border-white/5 hover:shadow-lg relative overflow-hidden">
                     <div class="absolute left-0 top-0 w-1 h-full bg-brand-lilac transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
 
@@ -303,6 +305,11 @@
                     <p class="text-text-muted text-sm font-light leading-relaxed">Entre o cuidado e a patologização: repensando o que chamamos de saúde mental.</p>
                  </a>
             </div>
+
+            <!-- Link Mobile (Visível apenas em telas pequenas, abaixo dos posts) -->
+            <a href="#" class="md:hidden self-center text-xs uppercase tracking-widest font-bold text-brand-lilac hover:text-brand-neon transition-colors border-b border-brand-lilac/30 hover:border-brand-neon pb-1">
+                Ler mais postagens &rarr;
+            </a>
         </div>
     </section>
 
@@ -314,7 +321,8 @@
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
             <h2 class="font-serif text-4xl md:text-5xl text-text-main mb-6">Vamos conversar</h2>
             <p class="text-text-muted font-light max-w-lg mx-auto mb-12">
-                Para agendamentos e outras informações, fale diretamente comigo;
+                <!-- Dois pontos ajustado -->
+                Para agendamentos e outras informações, fale diretamente comigo:
             </p>
 
             <!-- Botão WhatsApp com link atualizado -->
