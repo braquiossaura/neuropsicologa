@@ -69,7 +69,8 @@
         <div class="lilac-glow top-0 right-0 opacity-60"></div>
         <div class="lilac-glow bottom-0 left-0 opacity-40 translate-y-1/2 -translate-x-1/2"></div>
         
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full relative z-10">
+        <!-- Gap reduzido no mobile: de gap-16 para gap-8 md:gap-16 -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center w-full relative z-10">
             
             <div class="space-y-8 fade-in-up order-2 md:order-1">
                 
@@ -105,20 +106,20 @@
                     <a href="#contato" class="bg-brand-neon text-bg-main px-8 py-3.5 rounded-sm hover:bg-brand-neon-hover transition-colors text-center uppercase text-xs font-bold tracking-widest">
                         Agendar Sessão
                     </a>
-                    <!-- Botão Centralizado no Mobile (justify-center) e Esquerda no Desktop (sm:justify-start) -->
                     <a href="#servicos" class="text-text-muted px-6 py-3.5 border-b border-transparent hover:border-brand-lilac hover:text-brand-lilac transition-all text-center uppercase text-xs font-bold tracking-widest flex items-center gap-2 group justify-center sm:justify-start">
                         Entenda o Processo <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Imagem: Arte Abstrata "Psi" flutuante (Metade do tamanho no mobile) -->
-            <div class="relative h-[480px] w-full flex items-center justify-center fade-in-up order-1 md:order-2 opacity-60" style="animation-delay: 0.2s;">
-                 <div class="absolute w-[400px] h-[400px] bg-brand-lilac/5 blur-[80px] rounded-full"></div>
+            <!-- Imagem: Arte Abstrata "Psi" flutuante -->
+            <!-- Altura reduzida no mobile: h-[250px] md:h-[480px] -->
+            <div class="relative h-[250px] md:h-[480px] w-full flex items-center justify-center fade-in-up order-1 md:order-2 opacity-60" style="animation-delay: 0.2s;">
+                 <!-- Background glow ajustado no mobile -->
+                 <div class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-brand-lilac/5 blur-[80px] rounded-full"></div>
                  
-                 <!-- SVG Psi Animado - Classes de largura ajustadas para mobile -->
+                 <!-- SVG Psi Animado -->
                  <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/2 max-w-[175px] md:w-full md:max-w-[350px] drop-shadow-[0_0_5px_rgba(190,242,100,0.1)]">
-                    <!-- Caminho Central (Psi) -->
                     <path d="M100 220 V20" 
                           stroke="currentColor" 
                           class="text-brand-neon stroke-2 md:stroke-[1.5]" 
@@ -130,7 +131,6 @@
                           stroke-linecap="round" 
                           fill="none" />
 
-                    <!-- Partículas Orbitando / Sinapses -->
                     <circle cx="100" cy="20" r="3" class="fill-brand-neon animate-pulse shadow-lg shadow-brand-neon" />
                     <circle cx="40" cy="70" r="2.5" class="fill-brand-lilac animate-[pulse_3s_ease-in-out_infinite]" />
                     <circle cx="160" cy="70" r="2.5" class="fill-brand-lilac animate-[pulse_3s_ease-in-out_infinite_1.5s]" />
@@ -160,7 +160,6 @@
             <div class="w-16 h-0.5 bg-gradient-to-r from-brand-neon to-brand-lilac mx-auto opacity-80"></div>
             
             <div class="prose prose-lg text-text-muted font-light mx-auto leading-loose text-justify md:text-center">
-                <!-- Textos ajustados -->
                 <p>
                     Sou psicóloga, formada pela Universidade Federal de Goiás, com intercâmbio pela Universidad de la República. Possuo pós-graduação em Neuropsicologia, Psicopedagogia e Educação Especial, além de MBA em Educação.
                 </p>
@@ -173,17 +172,14 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 max-w-2xl mx-auto border-t border-white/5 mt-8">
-                <!-- Item 1 -->
                 <div class="group cursor-default">
                     <span class="block text-4xl font-serif text-brand-neon mb-1 group-hover:text-brand-lilac transition-colors duration-500">10+</span>
                     <span class="text-[10px] text-text-muted uppercase tracking-widest group-hover:text-white transition-colors">Anos de Estudo</span>
                 </div>
-                <!-- Item 2 -->
                 <div class="group cursor-default">
                     <span class="block text-4xl font-serif text-brand-neon mb-1 group-hover:text-brand-lilac transition-colors duration-500 flex justify-center"><i data-lucide="graduation-cap" class="w-9 h-9"></i></span>
                     <span class="text-[10px] text-text-muted uppercase tracking-widest group-hover:text-white transition-colors">Docência no Ensino Superior</span>
                 </div>
-                <!-- Item 3: LGBTQ+ -->
                 <div class="group cursor-default">
                     <span class="block text-4xl font-serif text-brand-neon mb-1 group-hover:text-brand-lilac transition-colors duration-500 flex justify-center"><i data-lucide="rainbow" class="w-9 h-9"></i></span>
                     <span class="text-[10px] text-text-muted uppercase tracking-widest group-hover:text-white transition-colors">LGBTQ+</span>
@@ -377,4 +373,4 @@
         lucide.createIcons();
     </script>
 </body>
-</html>
+</html>gitr 
