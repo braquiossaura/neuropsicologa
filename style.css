@@ -1,37 +1,37 @@
 html { scroll-behavior: smooth; }
-        body { background-color: #202023; color: #f4f4f5; }
+body { background-color: #121212; color: #f8f8f8; }
 
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
 
-        .card-fluid {
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s ease;
-        }
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .card-fluid:hover {
-            border-color: rgba(190, 242, 100, 0.4); 
-            box-shadow: 0 10px 30px -10px rgba(167, 139, 250, 0.1);
-            transform: translateY(-2px);
-            background-color: #2d2d33;
-        }
+.card-fluid {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+}
 
-        .lilac-glow {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(167, 139, 250, 0.08) 0%, rgba(0,0,0,0) 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-        }
+.card-fluid:hover {
+    border-color: rgba(156, 237, 142, 0.4); 
+    box-shadow: 0 10px 30px -10px rgba(114, 156, 120, 0.15);
+    transform: translateY(-2px);
+    background-color: #1e1e1e;
+}
+
+.matcha-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(114, 156, 120, 0.08) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
