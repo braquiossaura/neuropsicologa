@@ -1,4 +1,4 @@
-tailwind.config = {
+  tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
@@ -6,17 +6,18 @@ tailwind.config = {
                         sans: ['"Lato"', 'sans-serif'],
                     },
                     colors: {
-                        'bg-main': '#202023',      
-                        'bg-card': '#2a2a2e',      
-                        'text-main': '#f4f4f5',    
-                        'text-muted': '#a1a1aa',   
-                        'brand-neon': '#bef264',   
-                        'brand-lilac': '#a78bfa',  
-                        'brand-neon-hover': '#a3e635', 
-                        'brand-lilac-hover': '#8b5cf6',
+                        'bg-main': '#121212',      
+                        'bg-card': '#1a1a1a',      
+                        'text-main': '#f8f8f8',    
+                        'text-muted': '#9ca3af',   
+                        'brand-neon': '#9ced8e',   
+                        'brand-matcha': '#729c78', 
+                        'brand-accent': '#dca5d5', 
+                        'brand-neon-hover': '#83db74', 
+                        'brand-matcha-hover': '#5e8764',
                     },
                     backgroundImage: {
-                        'gradient-glow': 'radial-gradient(circle at center, rgba(167, 139, 250, 0.15) 0%, transparent 70%)',
+                        'gradient-glow': 'radial-gradient(circle at center, rgba(114, 156, 120, 0.15) 0%, transparent 70%)',
                     },
                     animation: {
                         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
