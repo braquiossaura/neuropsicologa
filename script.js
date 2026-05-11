@@ -13,7 +13,6 @@ tailwind.config = {
                 'text-muted': '#9ca3af',   
                 'brand-neon': '#9ced8e',   
                 'brand-matcha': '#729c78', 
-                'brand-accent': '#dca5d5', 
                 'brand-neon-hover': '#83db74', 
                 'brand-matcha-hover': '#5e8764',
             },
